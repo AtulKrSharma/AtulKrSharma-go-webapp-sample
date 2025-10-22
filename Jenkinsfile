@@ -30,12 +30,7 @@ pipeline {
 
     stage('Run') {
       steps {
-        // Example: Run binary briefly to confirm it starts
-        sh '''
-          ./go-webapp-sample &
-          sleep 5
-          pkill go-webapp-sample
-        '''
+       sh 'cd /var/lib/jenkins/workspace/Om && go-webapp-sample &'
       }
     }
   }
