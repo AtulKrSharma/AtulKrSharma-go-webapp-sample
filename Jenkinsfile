@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        git 'https://github.com/AtulKrSharma/go-webapp-sample.git'
+        git 'git@github.com:AtulKrSharma/AtulKrSharma-go-webapp-sample.git'
         sh 'go test ./...'
       }
 
